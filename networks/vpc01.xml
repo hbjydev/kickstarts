@@ -9,4 +9,7 @@
   <bridge name="virbr101" />
   <forward mode="route" />
   <ip address="10.0.0.1" netmask="255.255.255.0" />
+  <dhcp>
+    <range start="10.0.0.10" end="10.0.0.254" />
+  </dhcp>
 </network>

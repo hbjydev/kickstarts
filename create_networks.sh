@@ -6,5 +6,6 @@
 network_files=(vpc01 vpc02)
 
 for file in ${network_files[@]}; do
+  virsh net-destroy ${file} || true
   virsh net-create --file networks/${file}.xml
 done

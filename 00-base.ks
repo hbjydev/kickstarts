@@ -4,7 +4,6 @@
 
 text
 cdrom
-auth --enableshadow --passalgo=sha512
 keyboard --vckeymap=uk --xlayouts=gb
 lang en_GB.UTF-8
 eula --agreed
@@ -16,7 +15,7 @@ reboot --eject
 # Networking & Time
 ######
 
-network --bootproto=dhcp --noipv6 --onboot=on --device=eth0
+network --bootproto=dhcp --noipv6 --onboot=on --device=ens2
 timezone Europe/London
 
 
