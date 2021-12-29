@@ -16,7 +16,7 @@ reboot --eject
 # Networking & Time
 ######
 
-network --bootproto=dchp --noipv6 --onboot=on --device=eth0
+network --bootproto=dhcp --noipv6 --onboot=on --device=eth0
 timezone Europe/London
 
 

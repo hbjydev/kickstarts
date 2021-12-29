@@ -27,7 +27,7 @@ virt-install \
   --os-type=${OS_TYPE} \
   --location=${ISO_FILE} \
   --disk size=${DISK_SIZE} \
-  --network bridge=virbr0 \
+  --network bridge=virbr1 \
   --graphics=none \
   --os-variant=${OS_VARIANT} \
   --console pty,target_type=serial \

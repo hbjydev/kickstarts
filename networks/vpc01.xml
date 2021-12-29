@@ -1,0 +1,12 @@
+<!--
+ Copyright 2021 Hayden Young. All rights reserved.
+ Use of this source code is governed by a BSD-style
+ license that can be found in the LICENSE file.
+-->
+
+<network>
+  <name>vpc01</name>
+  <bridge name="virbr101" />
+  <forward mode="route" />
+  <ip address="10.0.0.1" netmask="255.255.255.0" />
+</network>
