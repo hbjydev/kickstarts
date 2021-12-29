@@ -7,11 +7,11 @@
 MEM_SIZE=2048       # memory (MiB)
 VCPUS=1             # core count
 OS_VARIANT="rocky8.5" # find with osinfo-query
-
-# installer ISO path
-ISO_FILE="/home/hayden/Downloads/Rocky-8.5-x86_64-minimal.iso"
 ## END VARIABLES
 
+. ./vars.sh
+
+ISO_FILE="static/rocky-${RL_MAJOR}.${RL_MINOR}.iso"
 OS_TYPE="linux"
 
 VM_NAME="$1"

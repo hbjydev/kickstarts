@@ -11,17 +11,17 @@ My Homelab setup using KVM scripts to bootstrap some testing infrastructure.
 ## Setup
 
 ```sh
+# download install isos
+./download_iso.sh
+
 # set up libvirt networks
 sudo ./create_networks.sh
 
-# download install isos
-sudo ./download_iso.sh
-
-# left side network
+# left side network hosts
 sudo ./create_vm.sh vpn01 8 network=vpc01
 sudo ./create_vm.sh svc01 8 network=vpc01
 
-# right side network
+# right side network hosts
 sudo ./create_vm.sh vpn02 8 network=vpc02
 sudo ./create_vm.sh svc02 8 network=vpc02
 ```
