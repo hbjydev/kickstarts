@@ -32,7 +32,7 @@ autopart --type=lvm
 # User Accounts
 ######
 
-user --groups=wheel --name=hayden --password="$6$bxAxmJjlaSUeXiEf$4O2UJyzSfz.woBulNJ7Msf1I28cghdH3QZqztut9YVgUTq2HmdAxhRvrKRfOkiDAIdgZPavRq33nm0vI4ULvS/" --gecos="Hayden Young"
+user --groups=wheel --name=hayden --password="$6$/H1oylk4WEQs/c47$a2rELZgN7G4n0bKpT44KCl3ozs20PEmqtR0s.HWsmYlbn1GQ/H51nEqRo6I2Pp.EJOvaisZolUMQ3ve7fXXia/" --gecos="Hayden Young"
 
 
 ######
