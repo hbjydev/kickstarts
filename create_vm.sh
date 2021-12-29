@@ -3,13 +3,13 @@
 # Use of this source code is governed by a BSD-style
 # license that can be found in the LICENSE file.
 
+. ./vars.sh
+
 ## VARIABLES
 MEM_SIZE=2048       # memory (MiB)
 VCPUS=1             # core count
-OS_VARIANT="rocky8.5" # find with osinfo-query
+OS_VARIANT="rocky${RL_MAJOR}.${RL_MINOR}" # find with osinfo-query
 ## END VARIABLES
-
-. ./vars.sh
 
 ISO_FILE="static/rocky-${RL_MAJOR}.${RL_MINOR}.iso"
 OS_TYPE="linux"

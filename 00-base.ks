@@ -15,7 +15,7 @@ reboot --eject
 # Networking & Time
 ######
 
-network --bootproto=dhcp --noipv6 --onboot=on --device=ens2
+network --bootproto=dhcp --noipv6 --onboot=on --device=eth0
 timezone Europe/London
 
 
@@ -28,11 +28,12 @@ zerombr
 clearpart --all --initlabel
 autopart --type=lvm
 
+
 ######
 # User Accounts
 ######
 
-user --groups=wheel --name=hayden --password="$6$/H1oylk4WEQs/c47$a2rELZgN7G4n0bKpT44KCl3ozs20PEmqtR0s.HWsmYlbn1GQ/H51nEqRo6I2Pp.EJOvaisZolUMQ3ve7fXXia/" --gecos="Hayden Young"
+user --groups=wheel --name=hayden --iscrypted --password=$6$/H1oylk4WEQs/c47$a2rELZgN7G4n0bKpT44KCl3ozs20PEmqtR0s.HWsmYlbn1GQ/H51nEqRo6I2Pp.EJOvaisZolUMQ3ve7fXXia/ --gecos="Hayden Young"
 
 
 ######
