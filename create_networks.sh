@@ -3,6 +3,8 @@
 # Use of this source code is governed by a BSD-style
 # license that can be found in the LICENSE file.
 
+. ./vars.sh
+
 network_files=(vpc01 vpc02)
 
 function network_config() {
