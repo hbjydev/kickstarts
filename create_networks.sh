@@ -5,7 +5,15 @@
 
 network_files=(vpc01 vpc02)
 
-for file in ${network_files[@]}; do
-  virsh net-destroy ${file} || true
-  virsh net-create --file networks/${file}.xml
+function network_config() {
+  name=$1
+
+  virsh net-destroy ${name} || true
+  virsh net-create --file ./networks/${name}.xml
+}
+
+for file in ./networks/*; do
+  name=$(echo $file | sed 's/.\/networks\///' | sed 's/.xml//')
+  echo "Processing network $name..."
+  network_config $name
 done
